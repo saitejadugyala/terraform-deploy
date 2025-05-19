@@ -2,90 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome | Saiteja's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Teja's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    main section:not(#home){
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <!-- Intro / Landing Page -->
-<section id="intro">
-  <div class="intro-content">
-    <h1>🙏 Welcome to My DevOps Portfolio</h1>
-    <p>Hello! I'm <strong>Sai Teja </strong>, a DevOps Engineer focused on automating infrastructure, CI/CD pipelines, and cloud-native solutions.</p>
-    <p>I thrive at the intersection of development and operations — delivering reliable, scalable systems through modern DevOps practices.</p>
-    <p>🚀 Tools: Terraform • Docker • Kubernetes • GitHub Actions • GCP • AWS</p>
-    <p>Explore my work and see how I can help you achieve your goals.</p>
-    <a href="#about" class="enter-btn">Explore My Work</a>
-  </div>
-</section>
+  <header id="home">
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+    <div class="intro-content">
+      <h1>🙏 Welcome to My DevOps Portfolio</h1>
+      <p>Hello! I'm <strong>Sai Teja</strong>, a DevOps Engineer focused on automating infrastructure, CI/CD pipelines, and cloud-native solutions.</p>
+      <p>I thrive at the intersection of development and operations — delivering reliable, scalable systems through modern DevOps practices.</p>
+      <p>🚀 Tools: Terraform • Docker • Kubernetes • GitHub Actions • GCP • AWS</p>
+      <a href="#about" class="enter-btn">Explore My Work</a>
+    </div>
+    <div class="intro-image">
+      <img src="assets/info.JPG" alt="Boy Waving" class="animated-boy" />
+    </div>
+  </header>
 
-
-  <!-- Main Content -->
-  <main id="main-content" style="display: none;">
-    <header>
-      <h1>Sai Teja Dugyala</h1>
-      <p> Devops Engineer | Cloud Enthusiast</p>
-    </header>
-
+  <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I am a passionate DevOps engineer, AI enthusiast, and cloud specialist. I have experience in building scalable web applications, automating infrastructure, and deploying solutions on various cloud platforms. My interests include leveraging artificial intelligence, streamlining DevOps processes, and architecting robust cloud-native systems.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Java, Linux, AWS</li>
-        <li>Python, Django</li>
-        <li>Terraform, GCP, Docker, Jenkines, </li>
-      </ul>
+      <p>Hi! I’m a DevOps Engineer who’s always curious and constantly learning. I specialize in building reliable infrastructure, automating workflows, and streamlining development pipelines. Right now, I'm expanding my skills into the world of artificial intelligence—building AI systems using Python and exploring how intelligent automation can enhance both development and operations.</p>
+      <p>Whether it’s setting up cloud environments, optimizing CI/CD, or experimenting with machine learning, I’m driven by a passion for solving problems and improving systems. When I'm not coding or tinkering with new tools, I'm probably diving into tutorials, reading up on emerging tech, or experimenting with side projects.</p>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-      <h3>Software Engineer – Tata consultancy services</h3>
-      <p>2021 – 2024</p>
-      <p>Automation & IaC: Developed automation tools and scripts for deployment, configuration management, and CI/CD pipelines using Terraform, Ansible, and Python, ensuring efficient and repeatable processes.</p>
-      <p>Scalability: Worked closely with engineering and observability teams to design and implement scalable solutions, supporting increased workloads and traffic with minimal disruption. </p>
-      <p>Incident Management: Part of the on-call rotation, managing incidents, performing root cause analysis, and implementing preventive measures to avoid future occurrences. </p>
-      <p>Monitoring & Alerting: Built and maintained monitoring, alerting, and logging solutions to proactively address issues and support continuous improvement. </p>
-      <p>Documentation: Created and maintained documentation for processes, systems, and best practices to ensure knowledge sharing and continuity within the team.</p>
+      <div>
+        <h3>DevOps/SRE Engineer - TCS</h3>
+        <ul>
+          <li>Incident response and proactive monitoring</li>
+          <li>CI/CD with Terraform, Ansible, Python</li>
+          <li>Capacity planning, secure architecture</li>
+        </ul>
+        <h3>DevOps Engineer - TCS</h3>
+        <ul>
+          <li>Deployment automation, 40% faster delivery</li>
+          <li>20% cost savings through cloud optimization</li>
+        </ul>
+      </div>
     </section>
 
     <section id="education">
       <h2>Education</h2>
-      <p>B.Tech in Electrical and Electronics Engineering – Lovely Professional University (2017–2021)</p>
+      <div>
+        <h3>Ontario College Graduate Certificate in Cloud Computing</h3>
+        <p>Loyalist College, Ontario</p>
+      </div>
+      <div>
+        <h3>Bachelor of Technology in Electrical and Electronics Engineering</h3>
+        <p>Lovely Professional University, Punjab</p>
+        <p>Graduated: 2021</p>
+      </div>
     </section>
 
-    <section id="contact">
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <p>AWS <span>85%</span></p>
+          <div class="progress"><div style="width: 85%"></div></div>
+          <img src="assets/aws.png" alt="AWS logo" />
+        </div>
+        <div class="skill">
+          <p>Docker <span>90%</span></p>
+          <div class="progress"><div style="width: 90%"></div></div>
+          <img src="assets/docker.png" alt="Docker logo" />
+        </div>
+        <div class="skill">
+          <p>Kubernetes <span>85%</span></p>
+          <div class="progress"><div style="width: 85%"></div></div>
+          <img src="assets/kubernetes.png" alt="Kubernetes logo" />
+        </div>
+        <div class="skill">
+          <p>Terraform <span>80%</span></p>
+          <div class="progress"><div style="width: 80%"></div></div>
+          <img src="assets/terraform.png" alt="Terraform logo" />
+        </div>
+        <div class="skill">
+          <p>Python <span>75%</span></p>
+          <div class="progress"><div style="width: 75%"></div></div>
+          <img src="assets/python.png" alt="Python logo" />
+        </div>
+        <div class="skill">
+          <p>Go <span>60%</span></p>
+          <div class="progress"><div style="width: 60%"></div></div>
+          <img src="assets/go.png" alt="Go logo" />
+        </div>
+        <div class="skill">
+          <p>Jenkins <span>75%</span></p>
+          <div class="progress"><div style="width: 75%"></div></div>
+          <img src="assets/jenkins.png" alt="Jenkins logo" />
+        </div>
+        <div class="skill">
+          <p>GitHub Actions <span>80%</span></p>
+          <div class="progress"><div style="width: 80%"></div></div>
+          <img src="assets/github.png" alt="GitHub Actions logo" />
+        </div>
+        <div class="skill">
+          <p>GCP <span>70%</span></p>
+          <div class="progress"><div style="width: 70%"></div></div>
+          <img src="assets/GCP logo.png" alt="GCP logo" />
+        </div>
+        <div class="skill">
+          <p>Linux <span>80%</span></p>
+          <div class="progress"><div style="width: 80%"></div></div>
+          <img src="assets/Linux logo.png" alt="Linux logo" />
+        </div>
+        <div class="skill">
+          <p>Java <span>75%</span></p>
+          <div class="progress"><div style="width: 75%"></div></div>
+          <img src="assets/java.png" alt="Java logo" />
+        </div>
+        <div class="skill">
+          <p>HTML/CSS <span>85%</span></p>
+          <div class="progress"><div style="width: 85%"></div></div>
+          <img src="assets/html logo.png" alt="HTML/CSS logo" />
+        </div>
+        <div class="skill">
+          <p>MySQL <span>80%</span></p>
+          <div class="progress"><div style="width: 80%"></div></div>
+          <img src="assets/mysql.png" alt="MySQL logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Go REST API</h3>
+          <p>CRUD-based task manager in Go</p>
+        </div>
+        <div class="project">
+          <h3>Twitter API Tool</h3>
+          <p>Automated tweet manager using Go & OAuth</p>
+        </div>
+        <div class="project">
+          <h3>Collaborative Backend</h3>
+          <p>Worked on scalable Go backend logic</p>
+        </div>
+        <div class="project">
+          <h3>Chatbot Deployment</h3>
+          <p>CI/CD pipeline for chatbot infra</p>
+        </div>
+        <div class="project">
+          <h3>Three-Tier AWS Setup</h3>
+          <p>Terraform & EC2 auto provisioning</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Core JAVA - TCS</li>
+        <li>Web Development - TCS</li>
+        <li>Kubernetes - Udemy</li>
+        <li>DevOps with AWS - LinkedIn/HeyDevops</li>
+      </ul>
+    </section>
+
+    <section id="connect">
       <h2>Contact</h2>
-      <p>Email: saitejadugyala2000@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/saitejadugyala" target="_blank">saitejadugyala</a></p>
+      <p>Email: <a href="mailto:saitejaraodugyala@gmail.com">saitejaraodugyala@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/dugyala-sai-teja/">dugyala-sai-teja</a></p>
+      <p>GitHub: <a href="https://github.com/saitejadugyala468">saitejadugyala468</a></p>
     </section>
-    <section id="contact">
-│         <h2>Contact</h2>
-│         <form id="contact-form">
-│           <label for="name">Name:</label><br />
-│           <input type="text" id="name" name="name" required /><br />
-│
-│           <label for="email">Email:</label><br />
-│           <input type="email" id="email" name="email" required /><br />
-│
-│           <label for="message">Message:</label><br />
-│           <textarea id="message" name="message" rows="5" required></textarea><br />
-│
-│           <button type="submit">Send</button>
-│         </form>
-│       </section>
-
-    <footer>
-      <p>&copy; 2025 Sai Teja Dugyala • Made with ❤️ and ☁️</p>
-    </footer>
   </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Sai Teja Dugyala</p>
+  </footer>
+  <script>
+        // Disable navigation before Explore
+    let unlocked = false;
+
+    document.querySelector('.enter-btn').addEventListener('click', function (e) {
+      e.preventDefault();
+      unlocked = true;
+      document.querySelectorAll('main section').forEach(sec => {
+        sec.style.display = 'block';
+      });
+      document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (!unlocked) {
+          e.preventDefault();
+          alert("Click 'Explore My Work' first to access the portfolio.");
+        }
+      });
+    });
+
+  </script>
 </body>
 </html>
