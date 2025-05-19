@@ -1,5 +1,15 @@
-variable "bucket_name" {
-  description = "The name of the GCS bucket. Must be globally unique."
+variable "project" {
+  description = "The GCP project ID"
   type        = string
-  default     = "sai-teja-portfolio-bucket"
 }
+
+variable "credentials_file" {
+  description = "Path to the GCP credentials JSON file"
+  type        = string
+}
+
+variable "bucket_name" {
+  description = "Name of the GCS bucket"
+  type        = string
+}
+

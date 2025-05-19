@@ -1,7 +1,7 @@
 provider "google" {
-  project     = "blissful-acumen-459721-v1"
+  project     = "terraform-static-site"
   region      = "us-central1"
-  credentials = file("C:/Users/saiteja/downloads/blissful-acumen-459721-v1-ec0c63a3866d.json")
+  credentials = file("C:/Users/saiteja/downloads/terraform-static-site-048436d54cb0.json")
 }
 
 resource "google_storage_bucket" "portfolio_bucket" {
@@ -25,20 +25,20 @@ resource "google_storage_bucket_iam_binding" "public_access" {
 resource "google_storage_bucket_object" "index" {
   name         = "index.html"
   bucket       = google_storage_bucket.portfolio_bucket.name
-  source       = "website/index.html"
+  source       = "dummy_website/index.html"
   content_type = "text/html"
 }
 
 resource "google_storage_bucket_object" "css" {
   name         = "style.css"
   bucket       = google_storage_bucket.portfolio_bucket.name
-  source       = "website/style.css"
+  source       = "dummy_website/style.css"
   content_type = "text/css"
 }
 
 resource "google_storage_bucket_object" "js" {
   name         = "script.js"
   bucket       = google_storage_bucket.portfolio_bucket.name
-  source       = "website/script.js"
+  source       = "dummy_website/script.js"
   content_type = "application/javascript"
 }
