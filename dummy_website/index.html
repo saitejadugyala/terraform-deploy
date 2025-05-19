@@ -23,6 +23,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
+        <li><a href="Resume">My Resume</a></li>
         <li><a href="#connect">Connect</a></li>
       </ul>
     </nav>
@@ -73,6 +74,10 @@
         <p>Lovely Professional University, Punjab</p>
         <p>Graduated: 2021</p>
       </div>
+    </section>
+    <section id="My Resume">
+      <h2>My Resume</h2>
+      <p>Download my resume <a href="https://drive.google.com/file/d/1BZuPmATtE6BJTyfT2aEEO1ThQDGBlDhs/view?usp=sharing" download>here</a>.</p>
     </section>
 
     <section id="skills">
@@ -184,7 +189,6 @@
     </section>
 
     <section id="certifications">
-    <section id="certifications" data-animate>
       <h2>Certifications</h2>
       <div>
         <h3>Google Cloud Professional Cloud Architect</h3>
@@ -212,13 +216,30 @@
         </div>
     </section>
     </section>
-
     <section id="connect">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:saitejaraodugyala@gmail.com">saitejaraodugyala@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/dugyala-sai-teja/">dugyala-sai-teja</a></p>
-      <p>GitHub: <a href="https://github.com/saitejadugyala468">saitejadugyala468</a></p>
+     <h2>Contact Me</h2>
+      <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+       <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      </form>
+     <div class="success-message" id="success-message"></div>
     </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contact-form');
+      const message = document.getElementById('success-message');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+         message.textContent = "✅ Message sent successfully!";
+        form.reset();
+      });
+    });
+
+    </script>
+
   </main>
 
   <footer>
