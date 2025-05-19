@@ -15,12 +15,14 @@ terraform-deploy/
 ├── variables.tf           # Variable declarations
 ├── outputs.tf             # Output values
 ├── terraform.tfvars       # Variable values (credentials, project ID, bucket name)
-├── website/               # Static website files
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+├── dummy_website/         # Static website files renamed from 'website'
+│   ├── index.html         # Main HTML file (updated with resume and assets section)
+│   ├── style.css          # CSS styles
+│   ├── script.js          # JavaScript interactions
+│   └── assets/            # Directory for storing PnP-related content/media
 ├── .gitignore
-└── README.md
+└── README.md              # Project documentation
+
 ```
 
 ## 🌐 Live URL
@@ -46,6 +48,7 @@ bucket_name      = "your-unique-gcs-bucket-name"
 ### 3. Initialize and Apply Terraform
 ```bash
 terraform init
+terraform plan
 terraform apply
 ```
 > Type `yes` when prompted.
