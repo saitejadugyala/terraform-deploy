@@ -98,6 +98,59 @@ button:focus {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+.download-btn:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+.contact-icons a {
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.direct-contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.direct-contact a:hover {
+  text-decoration: underline;
+}
+.direct-contact a:visited {
+  color: #3b82f6;
+}
+.direct-contact a:active {
+  color: #2563eb;
+}
+.direct-contact a:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+.direct-contact a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+.direct-contact a:focus:not(:focus-visible) {
+  outline: none;
+}
+.direct-contact a:focus-visible:not(:focus) {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
 
 #connect form {
   display: flex;

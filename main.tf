@@ -1,7 +1,7 @@
 provider "google" {
   project     = "terraform-static-site"
   region      = "us-central1"
-  credentials = file("C:/Users/saiteja/downloads/terraform-static-site-048436d54cb0.json")
+  credentials = file("C:/Users/saiteja/downloads/terraform-static-site-99b5500ca249.json")
 }
 
 resource "google_storage_bucket" "portfolio_bucket" {
